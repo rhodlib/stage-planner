@@ -1,4 +1,3 @@
-import React from 'react'
 import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { describe, it, expect, vi } from 'vitest'
@@ -52,8 +51,8 @@ describe('DownloadSection', () => {
       click: vi.fn(),
     }
     const createElementSpy = vi.spyOn(document, 'createElement').mockReturnValue(mockLink as any)
-    const appendChildSpy = vi.spyOn(document.body, 'appendChild').mockImplementation(vi.fn())
-    const removeChildSpy = vi.spyOn(document.body, 'removeChild').mockImplementation(vi.fn())
+    const appendChildSpy = vi.spyOn(document.body, 'appendChild').mockImplementation(() => mockLink as any)
+    const removeChildSpy = vi.spyOn(document.body, 'removeChild').mockImplementation(() => mockLink as any)
     
     render(<DownloadSection {...mockProps} />)
     

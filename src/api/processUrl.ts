@@ -1,14 +1,3 @@
-interface ProcessUrlRequest {
-  url: string
-}
-
-interface ProcessUrlResponse {
-  success: boolean
-  downloadUrl?: string
-  fileName?: string
-  error?: string
-}
-
 export default async function handler(req: any, res: any) {
   try {
     const { url } = req.body
