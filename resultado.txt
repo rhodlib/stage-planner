@@ -1,0 +1,88 @@
+Resumen de cada etapa del proceso conversacional:
+
+Etapa 1: Recolección del modelo de auto de interés
+
+1. Objetivo:
+   Obtener información sobre el modelo de auto que le interesa al cliente, incluyendo marca, tipo (nuevo o usado), año, versión, características deseadas y presupuesto.
+
+2. Mensajes iniciales utilizados:
+   - ¿Qué marca y modelo de auto tienes en mente?
+   - ¿Estás buscando un auto nuevo o usado? ¿Cuál modelo te interesa?
+   - ¿Cuáles son las características más importantes que buscas en el modelo de auto?
+   - ¿Tienes un presupuesto específico para el modelo de auto que te interesa?
+   - ¿Hay algún año o versión del modelo que prefieras?
+
+3. Condición para finalizar esta etapa:
+   Cuando el cliente menciona el modelo de auto o indica que tiene uno en mente.
+
+4. Salida esperada:
+   Una recolección general de los datos proporcionados por el cliente, como marca, modelo, preferencia de año, tipo (nuevo/usado), características y presupuesto. Aún no está estructurado con campos definidos.
+
+5. Uso de herramientas externas o fuentes RAG:
+   No se utiliza ninguna herramienta externa ni fuente de información adicional.
+
+Etapa 2: Exploración de planes de ahorro
+
+1. Objetivo:
+   Comprender las expectativas del cliente con respecto a planes de ahorro y conocer qué modalidades o características busca en ellos.
+
+2. Mensajes iniciales utilizados:
+   - ¿Cuáles son sus principales objetivos al considerar un plan de ahorro?
+   - ¿Qué modalidades de ahorro ha considerado anteriormente y por qué le interesan?
+   - ¿Qué características considera más importantes en un plan de ahorro ideal?
+   - ¿Cómo le gustaría que fuese la flexibilidad en su plan de ahorro?
+   - ¿Qué preocupaciones tiene respecto a los planes de ahorro disponibles actualmente?
+
+3. Condición para finalizar esta etapa:
+   Cuando el cliente selecciona un tipo de plan de ahorro o solicita más información sobre las opciones disponibles.
+
+4. Salida esperada:
+   Se registra de forma general la información compartida por el cliente sobre expectativas, experiencia previa y criterios clave para elegir un plan de ahorro.
+
+5. Uso de herramientas externas o fuentes RAG:
+   No se emplean herramientas ni consultas externas para esta etapa.
+
+Etapa 3: Calificación sobre plazos y montos
+
+1. Objetivo:
+   Estimar la capacidad financiera del cliente preguntando el plazo en que desea tener el vehículo y la cuota mensual aproximada que está dispuesto a pagar.
+
+2. Mensajes iniciales utilizados:
+   - ¿Cuál es el plazo en el que le gustaría recibir su auto?
+   - ¿Cuál es el monto aproximado de la cuota mensual que estaría dispuesto a pagar?
+   - ¿Está considerando un plazo específico para financiar la compra del auto?
+   - ¿Cuánto tiempo estima que le gustaría esperar para tener su vehículo?
+   - ¿Qué porcentaje del precio total del auto desea financiar en su cuota mensual?
+
+3. Condición para finalizar esta etapa:
+   Cuando el cliente proporciona información sobre el plazo deseado y menciona un monto o preferencia sobre la cuota mensual.
+
+4. Salida esperada:
+   Datos básicos relacionados al plazo objetivo para obtener el auto y una referencia sobre su capacidad de pago mensual.
+
+5. Uso de herramientas externas o fuentes RAG:
+   Esta etapa no usa herramientas ni integraciones externas.
+
+Etapa 4: Cierre con opción de vehículo usado y horario
+
+1. Objetivo:
+   Informar al cliente sobre la opción de entregar su vehículo usado como parte de pago y concretar un horario para retomar el contacto o agendar una reunión.
+
+2. Mensajes iniciales utilizados:
+   - Hola, quería informarte que podemos aceptar tu vehículo usado como parte de pago. ¿Te gustaría saber más sobre el proceso?
+   - Si estás interesado, podríamos evaluar tu vehículo usado y considerar su valor como parte del pago. ¿Cuándo te gustaría venir a verlo?
+   - Utilizar tu vehículo usado como parte de pago es una excelente opción. ¿Qué día y hora te viene bien para discutirlo más a fondo?
+   - Además de ofrecer buenas opciones de financiamiento, también aceptamos vehículos usados. ¿Qué horarios te tienen disponibles para que hablemos de esto?
+   - Si consideras usar tu vehículo usado como parte de pago, me encantaría ayudarte con eso. ¿Cuándo podríamos programar una reunión para conversarlo?
+
+3. Condición para finalizar esta etapa:
+   Cuando se logra acordar un horario de contacto con el cliente.
+
+4. Salida esperada:
+   Horario confirmado de contacto y posible interés del cliente en entregar su vehículo usado como parte de pago. La estructura es general.
+
+5. Uso de herramientas externas o fuentes RAG:
+   No se emplean herramientas externas ni fuentes de apoyo adicionales.
+
+Resumen general:
+El flujo conversacional sigue una secuencia lógica iniciando con la identificación del interés del cliente, luego explora su capacidad de ahorro, evalúa el marco de financiamiento y finalmente ofrece una alternativa de intercambio con el vehículo actual. En ninguna etapa se utilizan herramientas o datos externos, y la información que se recopila es general, sin campos específicos predefinidos.

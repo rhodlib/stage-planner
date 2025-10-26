@@ -1,0 +1,14 @@
+{
+  "functions": {
+    "src/api/processUrl.ts": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/process-url",
+      "destination": "/src/api/processUrl.ts"
+    }
+  ]
+}
+
